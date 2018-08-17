@@ -1,0 +1,19 @@
+// Example program
+#include <iostream>
+#include <string>
+
+int main()
+{
+    std::string p1, p2, p3, elec, elec1, fi;
+    std::cout << "First word: ";
+    std::cin >> p1;
+    std::cout << "Second word: ";
+    std::cin >> p2;
+    std::cout << "Third word: ";
+    std::cin >> p3;
+    elec = (p1 < p2) ? p1:p2;
+    elec1 = (p2 < p3) ? p2:p3; 
+    fi = (elec < elec1) ? elec:elec1;
+    std::cout << "The first word alphabetically is: " << fi <<std::endl;
+    
+}

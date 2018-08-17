@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+    float a, b, c;
+    std::cout << "First number:  ";
+    std::cin >> a;
+    std::cout << "Second number:  ";
+    std::cin >> b;
+    std::cout << "Third number:  ";
+    std::cin >> c;
+    float x;
+    x= (a>b) ? a:b and (b>c) ? b:c;
+    std::cout <<"The biggest number is: " << x << std::endl;
+    return 0 ;
+}
