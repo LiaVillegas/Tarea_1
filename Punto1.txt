@@ -1,0 +1,22 @@
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+  int e, change_float;
+  float r;
+  
+  std::cout<< "Ingrese un número entero: " << std::endl;
+  std::cin>>e;
+  std::cout<< "Ingrese un número real: " << std::endl;
+  std::cin>>r;
+  
+  float change_int = e; // Conversion de int a float implicita
+  change_float = int(r); // Conversion de float a int explicita
+  
+  std::cout<< "La conversión de entero a flotante es: " << change_int << "      :::: No hay perdida de información!! ::: "<< std::endl;
+  std::cout<< "La conversión flotante a entero es: "<< change_float << "         :::: Hay perdida de decimales!! :::: " << std::endl;
+
+return 0;
+}
