@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+
+    int n;
+    std::cout << "Ingrese un numero: " << std::endl;
+    std::cin >> n;
+    std::string x = (n % 2 != 0) ? "impar": ((n==0)? "cero":"par");
+    std::cout << "El numero ingresado es "<< x << std::endl;
+    
+    return  0;
+}
